@@ -4,4 +4,6 @@ RUN mkdir -p /app
 WORKDIR /app
 ADD . /app/
 
+LABEL type="maven"
+
 CMD ["java","-jar","/app/my-app-1.0-SNAPSHOT.jar"]
